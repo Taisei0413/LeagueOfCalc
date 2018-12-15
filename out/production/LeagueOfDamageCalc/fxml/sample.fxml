@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="container" prefHeight="627.0" prefWidth="1083.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="output" layoutX="420.0" layoutY="494.0" promptText="結果" />
+      <Button fx:id="calc" layoutX="323.0" layoutY="494.0" mnemonicParsing="false" onAction="#handleCalc" text="計算" />
+      <Text layoutX="300.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="防御力" />
+      <TextField fx:id="ar" layoutX="300.0" layoutY="120.0" prefHeight="31.0" prefWidth="100.0" promptText="物理防御" />
+      <Text layoutX="154.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="与えるダメージ量" />
+      <TextField fx:id="ad" layoutX="150.0" layoutY="120.0" prefHeight="31.0" prefWidth="100.0" promptText="物理ダメージ" />
+      <Text layoutX="420.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="最終ダメージ量" />
+      <TextField fx:id="ap" layoutX="150.0" layoutY="151.0" prefHeight="31.0" prefWidth="100.0" promptText="魔法ダメージ" />
+      <TextField fx:id="mr" layoutX="300.0" layoutY="151.0" prefHeight="31.0" prefWidth="100.0" promptText="魔法防御" />
+      <CheckBox fx:id="adBox" layoutX="26.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleBox" text="物理" />
+      <CheckBox fx:id="apBox" layoutX="26.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleBox" text="魔法" />
+      <TextField fx:id="arPen" layoutX="150.0" layoutY="313.0" prefHeight="31.0" prefWidth="100.0" promptText="物理" />
+      <TextField fx:id="mrPen" layoutX="150.0" layoutY="344.0" prefHeight="31.0" prefWidth="100.0" promptText="魔法" />
+      <TextField fx:id="mrPenPercent" layoutX="300.0" layoutY="344.0" prefHeight="31.0" prefWidth="97.0" promptText="魔法" />
+      <TextField fx:id="arPenPercent" layoutX="300.0" layoutY="313.0" prefHeight="31.0" prefWidth="97.0" promptText="物理" />
+      <TextField fx:id="mrReduction" layoutX="450.0" layoutY="344.0" prefHeight="31.0" prefWidth="100.0" promptText="魔法" />
+      <TextField fx:id="arReduction" layoutX="450.0" layoutY="313.0" prefHeight="31.0" prefWidth="100.0" promptText="物理" />
+      <CheckBox fx:id="penBox" layoutX="150.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleBox" text="貫通値(実数)" />
+      <CheckBox fx:id="penPercentBox" layoutX="299.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleBox" text="貫通値(割合)" />
+      <CheckBox fx:id="reductionPercentBox" layoutX="599.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleBox" text="防御減少(割合)" />
+      <CheckBox fx:id="reductionBox" layoutX="449.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleBox" text="防御減少(実数)" />
+      <CheckBox fx:id="trueDmgBox" layoutX="749.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleBox" text="確定ダメージ(実数)" />
+      <CheckBox fx:id="trueDmgPercentBox" layoutX="899.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleBox" text="確定ダメージ(割合)" />
+      <TextField fx:id="adTrueDmgPercent" layoutX="899.0" layoutY="313.0" prefHeight="31.0" prefWidth="100.0" promptText="物理" />
+      <TextField fx:id="apTrueDmgPercent" layoutX="899.0" layoutY="344.0" prefHeight="31.0" prefWidth="100.0" promptText="魔法" />
+      <TextField fx:id="adTrueDmg" layoutX="749.0" layoutY="313.0" prefHeight="31.0" prefWidth="97.0" promptText="物理" />
+      <TextField fx:id="apTrueDmg" layoutX="749.0" layoutY="344.0" prefHeight="31.0" prefWidth="97.0" promptText="魔法" />
+      <TextField fx:id="mrReductionPercent" layoutX="599.0" layoutY="344.0" prefHeight="31.0" prefWidth="100.0" promptText="魔法" />
+      <TextField fx:id="arReductionPercent" layoutX="599.0" layoutY="313.0" prefHeight="31.0" prefWidth="100.0" promptText="物理" />
+      <CheckBox fx:id="critical" layoutX="14.0" layoutY="289.0" mnemonicParsing="false" text="クリティカルON" />
+   </children>
+</AnchorPane>
