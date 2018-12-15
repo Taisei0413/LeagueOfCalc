@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LeagueOfDamageCalc.iml" filepath="$PROJECT_DIR$/LeagueOfDamageCalc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeagueOfCalc.iml" filepath="$PROJECT_DIR$/LeagueOfCalc.iml" />
     </modules>
   </component>
 </project>
